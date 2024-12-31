@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy new year 2025</title>
+    <style>
+        *,
+        *:after,
+        *:before{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+        }
+        body{
+            background-color: black;
+            overflow: hidden;
+            height: 110vh;
+        }
+        .msg{
+            width: 100%;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 80px;
+            font-weight: bolder;
+            color: peru;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            opacity: 0;
+            animation: message 2s ease-in-out 2s forwards;
+        }
+        @keyframes message{
+            0%{
+                opacity: 0;
+                margin-top: 0;
+            }
+            100%{
+                opacity: 1;
+                margin-top: -200px;
+            }
+        }
+        .y1{
+            
+     color: orange;
+        }
+        .y2{
+            color: rgb(0, 247, 255);  
+    
+        }
+        .y3{
+            
+           color: rgb(184, 57, 131);
+        }
+        .y4{
+           
+        color: yellow;
+        }
+        .old{
+            color: blueviolet;
+            position: absolute;
+            top: 0%;
+            animation: old_animation 2s ease-in-out 2s forwards;
+            margin-left: -80px;
+        }
+        @keyframes old_animation {
+            0%{
+                top: 0%;
+            }
+            100%{
+                top:-250%;
+            }
+        }
+        .year{
+            position: absolute;
+            margin-top: 210px;
+            width: 100%;
+            text-align: center;
+            
+        }
+        .year>span{
+            font-size: 150px;
+            font-weight: 700;
+            font-family: "Poppins",sans-serif;
+            letter-spacing: -12px;
+
+        }
+        .first_year{
+            margin-right: 100px;
+        }
+        .new{
+            position: absolute;
+            right: -100px;
+            animation: new_animation 2s ease-in-out 2s forwards;
+        }
+        @keyframes new_animation {
+            0%{
+                right: -100px;
+            }
+            40%{
+                right: 435px;
+            }
+            90%{
+                right: 475px;
+            }
+            100%{
+                right: 500px;
+            }
+        }
+       .content{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        padding-top: 29%;
+       }
+    </style>
+</head>
+<body>
+    <div class="msg">
+        Happy new year da purusha...❤️ 
+    </div>
+    
+    <div class="year">
+        <span class="first_year">
+            
+            <span class="y1">2</span>
+            <span class="y2">0</span>
+            <span class="y3">2</span>
+        </span>
+        <span class="old">4</span>
+        <span class="y4 new">5</span>
+       
+    </div>
+    
+   
+    <div class="content">
+        "May the new year bless you with boundless joy and good health."<br>
+        En chellamae en thangamae en life la vanthathuku rembo thanks na ethir parkatha alavuku un kuda na happy ya irunthirken
+        en life la eppovumae unna miss panida kudathu en ulagamae ne tha ennoda lucky cham ne tha ennoda happiness ne tha ennoda palam mae
+        ne tha ithoda 8yrs na kuda travel panirken ethirparama en life la vantha ne ippo en life ae ne illama illa da thangam intha 8yrs thila
+        namalukula neraya sanda neraya santhosham ithae mari na sagura varaikum un kuda irukanum ithae passathoda intha 2025 la nama ona serthu 
+        nama  asai pata ellathayum pannalam nama dreams ellathayum nama ona serthu achieve pannalam kandippa nama asai pata mari nama life marum
+        nambikai yoda iruporm nitchiyama nadakum kandippa entha pretchanayum vanthalum unna vitu po matten da thangam...ne asai pata ellamae intha varsathila nadakanum atha pathu na santhosham padanum..<br>
+        I LOVE YOU....❤️🫂  I MISS YOU💔
+
+    </div>
+   
+    
+    <script>
+const blastconfetti=()=> {
+    const duration = 15 * 1000,
+  animationEnd = Date.now() + duration,
+  defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+function randomInRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+const interval = setInterval(function() {
+  const timeLeft = animationEnd - Date.now();
+
+  if (timeLeft <= 0) {
+    return clearInterval(interval);
+  }
+
+  const particleCount = 50 * (timeLeft / duration);
+
+  // since particles fall down, start a bit higher than random
+  confetti(
+    Object.assign({}, defaults, {
+      particleCount,
+      origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+    })
+  );
+  confetti(
+    Object.assign({}, defaults, {
+      particleCount,
+      origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+    })
+  );
+}, 250);
+}
+blastconfetti();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
